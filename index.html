@@ -1,0 +1,62 @@
+<html>
+    <body onLoad = 'startTime()'>
+<script type="text/javascript">
+function startTime() {
+var date = new Date();
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var seconds = date.getSeconds();
+if (hours < 10) hours = "0" + hours;
+if (minutes < 10) minutes = "0" + minutes;
+if (seconds < 10) seconds = "0" + seconds;
+document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+setTimeout(startTime, 1000);
+}
+</script>
+<br><br>
+Время на сайте: <b><span id="time"></span></b>
+<script>
+function sayHi() {
+alert('5 секунд прошло');
+}
+setTimeout(sayHi, 5000);
+</script>
+<script type='text/javascript'>
+    document.write("<h3>Версия браузера: </h3>");
+//Узнаем версию Вашего браузера и выведем ее на экран
+document.write(navigator.appVersion);
+</script>
+       <script>var a = new Array();
+var count = 3;
+for (var i=0; i<count; i++)
+    a[i]=parseInt(prompt("Введите целое число :", ""));
+alert("Массив: "+a.join(", ")); // вывод массива
+        </script>
+        <br><br>
+        <h4>Вычисление минимального из двух</h4>
+        <script>
+            var x = 10, y = 5;
+var z = Math.min(x, y);
+document.write("x= "+x+"; <br \/> y= "+y+"; <br \/>");
+if (x>y) {
+document.write(y)
+}else{
+document.write(x);
+}
+   
+        </script>
+        <br>
+        <br>
+        <br>
+        <h4>2 в степени 3</h4>
+        <script>         function pow(x, n) {
+  if (n == 1) {
+    return x;
+  } else {
+    return x * pow(x, n - 1);
+  }
+}
+
+document.write(pow(2, 3));</script>
+</body>
+</html>
